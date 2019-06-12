@@ -1,1 +1,555 @@
 # cv1
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#sidebar {
+    background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+}
+
+.menuitem:first-child {
+   background-color:#4CAF50;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+</style>
+
+<style>/* Stylesheet 2: */
+body {
+    font-family: Arial;
+    background-color: #d14836;
+    line-height: 20px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 26px;    
+}
+
+#top h1 {
+    margin:0;
+    line-height: 50px;
+}
+
+#menubar {
+    width: 190px;
+    float: right;
+}
+
+#main {
+    padding: 10px;
+    background-color: #ffffff;
+    font: 80% Verdana;
+}
+
+#main h1, #main h2 {
+    color: #d14836;
+}
+
+#sidebar {
+    background-color: #F6DAD7;
+    color: #d14836;
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    color: #ffffff;
+}
+
+#menulist {
+    padding:0;
+    font: 16px verdana;
+}
+
+.menuitem {
+    width: 155px;
+    background-color: #d14836;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(2) {
+   background-color:white;
+   color: #d14836;
+   font-weight:bold;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+    color: #d14836;
+}
+
+a {
+    color: #d14836;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<style>/* Stylesheet 3: */
+body {
+    font: 100% Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#sidebar {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding-left: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+#menulist {
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+
+.menuitem {
+    width: 165px;
+    float: left;
+    background-color: #555555;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(3) {
+   background-color:#4CAF50;
+}
+
+.menuitem:hover {
+    background-color: #999999;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #84c754;
+}
+</style>
+<style>/* Stylesheet 4: */
+body {
+    font: 100% Courier New;
+    margin: 20px;
+    line-height: 26px;
+    background-color: #000000;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.menuitem {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Welcome</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+       <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+       <li class="menuitem" onclick="noStyles()">No Stylesheet
+     </ul>
+    </div>
+    <div id="main">
+      <h1>Profile with Different Stylesheets</h1>
+      <p>
+<table cellspacing="10">
+ <tr align="left" valign="top">
+	<td>	
+		<br>
+		<img src ="C:\Users\Public\Pictures\Sample Pictures\IMG_20190610_190207.jpg" alt="Harshitha's profile photo" height = "200" width = "200">
+ 
+	</td>
+	<td>
+		  <p style="color:chocolate;font-weight:bold;font-family:Arial,Helvetica,sans-serif">   <font size="4"> <b>Harshitha H T </b> </font> <br>
+		  <font size="2"><i> email id:</i><em>harshithaht03@gmail.com </em> <br>
+		    
+		    
+		   </font> </p>	
+	</td>
+ </tr>
+<hr>
+<table cellspacing="5">
+
+
+ <tr align="left" valign="top">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+	<td>
+		<br>
+		<p class="leftah" style="background-color:dimgrey;font-weight:bold">EDUCATION </p>
+	</td>
+
+
+
+
+
+
+<table style="width:75%">
+  <tr>
+    <th>Cource</th>
+    <th>Name of institute</th> 
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>BE</td>
+    <td>SIT</td>
+    <td>CGPA:7.26</td>
+  </tr>
+  <tr>
+    <td>PU</td>
+    <td>Deeksha integrated</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>SSLC</td>
+    <td>Bhoomi Public School</td>
+    <td>89</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+	
+ </tr>
+ 
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:dimgrey;font-weight:bold"> TECHNICAL SKILLS </p>
+	</td>
+	<td>
+		<p class="leftall"> <font size="3"><i>Language known</i><li>c</li>
+							<li>c++</li></font></p>
+		
+		 
+	</td>
+ </tr>
+
+<tr align="left" valign="top">
+	<td>
+		<p class="leftah" style="background-color:dimgrey;font-weight:bold"> WORKSHOP </p>
+	</td>
+	<td>
+		<p class="leftall"> <font size="3"><i><li>Attended the workshop of Artifical intelligence</li></i>
+						<i><li>Attended the workshop of latex</li></i><br></font>
+		 </p> 
+	</td>
+ </tr>
+
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:dimgrey;font-weight:bold"> INTERESTS </p>
+	</td>
+	<td>
+		<p class="leftall"> <font size="3"><i><li>Watching TED talks on day to day topics</li></i>
+		<i><li>Dancing</li></i></font> </p> 
+	</td>
+ </tr>
+
+</table>
+<hr>
+
+<table>
+<h4> Feedback </h4>
+<tr>
+<td>
+<form action="index.html" method="get">
+First Name:<input type="text" name="fname"> <br>
+Last Name :<input type="text" name="lname"> <br>
+Email ID  :<input type="text" name="mail"> <br>
+
+<input type="Submit" value="submit">
+</form>
+</td>
+</tr>
+</table>
+<hr style="background-color:olive;">
+<p calss="last" style="background-color:olive;"> <font size="3">Contact details</font> <br style="background-color:olive;">
+ Website link- <a href="http://www.sit.ac.in"> link </a> <br style="background-color:olive;">
+ Mail address- <a href="mailto:harshithaht03@gmail.com"> maillink </a> </p>
+
+      </p>
+      
+<script>
+function noStyles() {
+    document.styleSheets[0].disabled = true;
+    document.styleSheets[1].disabled = true;
+    document.styleSheets[2].disabled = true;
+    document.styleSheets[3].disabled = true;
+}
+
+function reStyle(n) {
+    noStyles()
+    document.styleSheets[n].disabled = false;
+}
+
+function closeBlackdiv() {
+    var blackdiv, stylediv;
+    blackdiv = document.getElementById("blackdiv")
+    blackdiv.parentNode.removeChild(blackdiv);
+    stylediv = document.getElementById("stylediv")
+    stylediv.parentNode.removeChild(stylediv);
+}
+
+function showStyle(n) {
+var div, text, blackdiv;
+blackdiv = document.createElement("DIV");
+blackdiv.setAttribute("style","background-color:#000000;position:absolute;width:100%;height:100%;top:0;opacity:0.5;margin-left:-20px;");
+blackdiv.setAttribute("id","blackdiv");
+blackdiv.setAttribute("onclick","closeBlackdiv()");
+document.body.appendChild(blackdiv);
+div = document.createElement("DIV");
+div.setAttribute("id","stylediv");
+div.setAttribute("style","background-color:#ffffff;padding-left:5px;position:absolute;width:auto;height:auto;top:100px;bottom:50px;left:200px;right:200px;overflow:auto;font-family: monospace; white-space: pre;line-height:16px;");
+text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
+div.appendChild(text);
+document.body.appendChild(div);
+//alert(document.getElementsByTagName("STYLE")[n].innerHTML);
+}
+reStyle(0);
+</script>
+</body>
+</html>
+
