@@ -118,7 +118,7 @@ a:hover {
 <style>/* Stylesheet 2: */
 body {
     font-family: Arial;
-    background-color:wheat;
+    background-color:white;
     line-height: 20px;
 }
 
@@ -282,7 +282,7 @@ body {
     font: 100% Courier New;
     margin: 20px;
     line-height: 26px;
-    background-color: wheat;
+    background-color: white;
 }
 
 .container {
