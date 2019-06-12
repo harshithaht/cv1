@@ -1,6 +1,6 @@
 # cv1
 
-<!DOCTYPE html>
+
 <html>
 <head>
 <style>/* Stylesheet 1: */
@@ -118,7 +118,7 @@ a:hover {
 <style>/* Stylesheet 2: */
 body {
     font-family: Arial;
-    background-color: #d14836;
+    background-color:wheat;
     line-height: 20px;
 }
 
