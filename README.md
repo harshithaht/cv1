@@ -282,7 +282,7 @@ body {
     font: 100% Courier New;
     margin: 20px;
     line-height: 26px;
-    background-color: #000000;
+    background-color: wheat;
 }
 
 .container {
