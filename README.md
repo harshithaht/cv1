@@ -387,7 +387,7 @@ a:hover {
  <tr align="left" valign="top">
 	<td>	
 		<br>
-		<img src ="IMG_20190610_190207.jpg" alt="Harshitha's profile photo" height = "200" width = "200">
+		<img src ="harshitha.jpg" alt="Harshitha's profile photo" height = "200" width = "200">
  
 	</td>
 	<td>
